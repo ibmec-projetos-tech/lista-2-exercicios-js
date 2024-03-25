@@ -14,9 +14,8 @@ Nesse exercício, você será capaz de:
 
 Crie um arquivo scripts.js para cada exercício (ou um único arquivo para todos os exercícios) e resolva os problemas abaixo:
 
-### Exercício 1: Array e loop for
+### Exercício 1
 
-Array e loop for
 Considere esse array para realizar os próximos exercícios.
 
 ```javascript
@@ -35,4 +34,41 @@ e) Utilizando for, descubra o maior valor contido no array e imprima-o.
 
 f) Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
 
+### Exercício 2
+
+Utilize a estrutura de repetição `for` para desenvolver um algoritmo que seja capaz de inverter uma palavra, como a palavra “banana” para “ananab”. Utilize a string abaixo como exemplo. Depois, troque-a por outras para verificar se seu algoritmo está funcionando corretamente.
+
+De olho na dica 👀: Pesquise sobre os seguintes métodos: `split()`, `reverse()` e `join()`;
+
+```javascript
+let word = 'ibmec';
+```
+
+### Exercício 3
+
+Escreva um algoritmo que, dado um valor `n`, sendo `n > 1`, imprima na tela um quadrado feito de asteriscos de tamanho `n`. Por exemplo:
+
+```javascript
+n = 5
+
+*****
+*****
+*****
+*****
+*****
+```
+
+Faça o mesmo algoritmo que antes, mas de modo que imprima um triângulo retângulo com `5` asteriscos de base. Por exemplo:
+
+```javascript
+n = 5
+
+*
+**
+***
+****
+*****
+```
+
+### Exercício 4
 
