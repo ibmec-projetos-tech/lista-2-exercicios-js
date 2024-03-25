@@ -151,8 +151,11 @@ const school = {
 ```
 
 a) Crie uma função que obtenha o valor da chave de acordo com sua posição no array. Essa função deve possuir dois parâmetros: o objeto e a posição no array.
+
 b) Crie uma função que retorne a soma do número total de estudantes em todos os cursos.
+
 c) Crie uma função que verifica se uma determinada chave existe em todos os elementos do array `lessons`. O retorno deve ser um booleano (true ou false). Essa função deve possuir dois parâmetros: o objeto e o nome da chave.
+
 d) Crie uma função para alterar o turno para noite no curso de Python. Essa função deve ter três parâmetros: a base de dados a ser modificada, o nome do curso e o novo valor da chave.
 
 ### Exercício 8
@@ -179,4 +182,5 @@ const basket = [
   'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia', 'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana', 'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva', 'Uva' 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca', 'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana', 'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca', 'Laranja', 'Melancia', 'Pera' 'Jaca', 'Melancia', 'Uva', 'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca', 'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca', 'Banana', 'Pera', 'Abacate', 'Uva',
 ];
 ```
+
 
