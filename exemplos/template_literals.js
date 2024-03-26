@@ -1,4 +1,7 @@
 // Template Literals
 const myName = "Isabella";
 
-console.log('Bem-vinda, ' + myName + "!")
+const saudacao = `Bem-vinda, ${myName}!`;
+
+// console.log('Bem-vinda, ' + myName + "!")
+
