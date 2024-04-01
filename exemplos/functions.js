@@ -14,3 +14,5 @@ console.log(soma(2, 3));
 
  console.log(saudacao('Isabella'));
  console.log(typeof(saudacao));
+
+ 

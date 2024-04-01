@@ -130,4 +130,134 @@ function calculator(n1, n2, op) {
 
 calculator(5,1,'/')
 
-// Exercicio 5
+// Exercicio 5 -- Dúvida
+
+const senha = (tamanho) => {
+    let password = '';
+    const numbers = '0123456789';
+
+    for (i = 0; i < tamanho; i++) {
+        const randomCaractere = Math.floor(Math.random()* numbers.length)
+        password += numbers.charAt(randomCaractere)
+    }
+    return password
+}
+
+console.log(senha(5))
+
+// Exercicios 6
+
+const reader = {
+    name: 'Julia',
+    lastName: 'Pessoa',
+    age: 21,
+    favoriteBooks: [
+      {
+        title: 'O Senhor dos Anéis - a Sociedade do Anel',
+        author: 'J. R. R. Tolkien',
+        publisher: 'Martins Fontes',
+      },
+    ],
+  };
+
+// a)
+
+console.log(`O livro favorito de ${reader.name} ${reader.lastName} se chama '${reader.favoriteBooks[0].title}'`)
+
+// b)
+
+const livro2 = {
+    title: 'Harry Potter e o Prisioneiro de Azkaban',
+    author: 'JK Rowling',
+    publisher: 'Rocco',
+  }
+
+
+
+reader.favoriteBooks.push(livro2)
+console.log(reader)
+
+// c)
+
+console.log(`${reader.name} tem ${reader.favoriteBooks.length} livros favoritos`)
+
+// d)
+
+// ???
+
+// Exercicio 7
+
+const school = {
+    lessons: [
+      {
+        course: 'Python',
+        students: 20,
+        professor: 'Sabrina Moreira',
+        shift: 'Manhã',
+      },
+      {
+        course: 'Kotlin',
+        students: 10,
+        professor: 'Gisele Tessari',
+        shift: 'Noite',
+      },
+      {
+        course: 'JavaScript',
+        students: 738,
+        professor: 'Tamara Simões',
+        shift: 'Tarde',
+      },
+      {
+        course: 'MongoDB',
+        students: 50,
+        shift: 'Noite',
+      },
+    ]
+  };
+
+  // a)
+
+function obterValor(obj,pArray) {
+    return Object.values(obj.lessons[pArray])
+}
+
+console.log(obterValor(school,0))
+
+// b)
+
+function totalAlunos(obj) {
+    let total = 0;
+    for (i = 0; i < obj.lessons.length; i++) {
+        total += obj.lessons[i].students
+    }
+    return total
+}
+
+// c)
+
+function VerificarChave(obj, chave) {
+    for (let i = 0; i < obj.lessons.length; i++) {
+        if (obj.lessons[i].hasOwnProperty(chave)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(VerificarChave(school, 'professor'));
+
+// d)
+
+function AlterarTurno(obj, curso, turno) {
+    for (let i = 0; i < obj.lessons.length; i++) {
+        if (obj.lessons[i].course === curso) {
+            obj.lessons[i].shift = turno;
+        }
+    }
+    return obj;
+}
+
+console.log(AlterarTurno(school, 'Python', 'Noite'));
+console.log(school)
+
+
